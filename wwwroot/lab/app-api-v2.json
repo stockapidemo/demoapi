@@ -1,0 +1,373 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Demo Pet API",
+    "description": "Use to create mock requests and responses. Not an official F5 property.",
+    "version": "v2"
+  },
+  "paths": {
+    "/api/CatLookup/GetByPetID": {
+      "get": {
+        "tags": [
+          "CatLookup"
+        ],
+        "summary": "Get information about a Cat by PetID.",
+        "parameters": [
+          {
+            "name": "petID",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Cat information."
+          },
+          "400": {
+            "description": "The petid field is missing or not accepted."
+          }
+        }
+      }
+    },
+    "/api/CatLookup/GetByName": {
+      "get": {
+        "tags": [
+          "CatLookup"
+        ],
+        "summary": "Get information about Cats by name.",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Cat information."
+          },
+          "400": {
+            "description": "The name field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Cats are found."
+          }
+        }
+      }
+    },
+    "/api/CatLookup/GetByBreed": {
+      "get": {
+        "tags": [
+          "CatLookup"
+        ],
+        "summary": "Get information about Cats by breed.",
+        "parameters": [
+          {
+            "name": "breed",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Cat information."
+          },
+          "400": {
+            "description": "The age field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Cats are found."
+          }
+        }
+      }
+    },
+    "/api/CatLookup/GetByAge": {
+      "get": {
+        "tags": [
+          "CatLookup"
+        ],
+        "summary": "Get information about Cats by age.",
+        "parameters": [
+          {
+            "name": "age",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Cat information."
+          },
+          "400": {
+            "description": "The age field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Cats are found."
+          }
+        }
+      }
+    },
+    "/api/CatLookup/GetByLocation": {
+      "get": {
+        "tags": [
+          "CatLookup"
+        ],
+        "summary": "Get information about Cats by location.",
+        "parameters": [
+          {
+            "name": "location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Cat information."
+          },
+          "400": {
+            "description": "The location field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Cats are found."
+          }
+        }
+      }
+    },
+    "/api/CatLookup/GetAllCats": {
+      "get": {
+        "tags": [
+          "CatLookup"
+        ],
+        "summary": "Get information about all Cats.",
+        "responses": {
+          "200": {
+            "description": "Returns Cat information."
+          },
+          "404": {
+            "description": "If no Cats are found."
+          }
+        }
+      }
+    },
+    "/api/DogLookup/GetByPetID": {
+      "get": {
+        "tags": [
+          "DogLookup"
+        ],
+        "summary": "Get information about a Dog by PetID.",
+        "parameters": [
+          {
+            "name": "petID",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Dog information."
+          },
+          "400": {
+            "description": "The petid field is missing or not accepted."
+          }
+        }
+      }
+    },
+    "/api/DogLookup/GetByName": {
+      "get": {
+        "tags": [
+          "DogLookup"
+        ],
+        "summary": "Get information about Dogs by name.",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Dog information."
+          },
+          "400": {
+            "description": "The name field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Dogs are found."
+          }
+        }
+      }
+    },
+    "/api/DogLookup/GetByBreed": {
+      "get": {
+        "tags": [
+          "DogLookup"
+        ],
+        "summary": "Get information about Dogs by breed.",
+        "parameters": [
+          {
+            "name": "breed",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Dog information."
+          },
+          "400": {
+            "description": "The age field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Dogs are found."
+          }
+        }
+      }
+    },
+    "/api/DogLookup/GetByAge": {
+      "get": {
+        "tags": [
+          "DogLookup"
+        ],
+        "summary": "Get information about Dogs by age.",
+        "parameters": [
+          {
+            "name": "age",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Dog information."
+          },
+          "400": {
+            "description": "The age field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Dogs are found."
+          }
+        }
+      }
+    },
+    "/api/DogLookup/GetByLocation": {
+      "get": {
+        "tags": [
+          "DogLookup"
+        ],
+        "summary": "Get information about Dogs by location.",
+        "parameters": [
+          {
+            "name": "location",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns Dog information."
+          },
+          "400": {
+            "description": "The location field is missing or not accepted."
+          },
+          "404": {
+            "description": "If no Dogs are found."
+          }
+        }
+      }
+    },
+    "/api/DogLookup/GetAllDogs": {
+      "get": {
+        "tags": [
+          "DogLookup"
+        ],
+        "summary": "Get information about all Dogs.",
+        "responses": {
+          "200": {
+            "description": "Returns Dog information."
+          },
+          "404": {
+            "description": "If no Dogs are found."
+          }
+        }
+      }
+    },
+    "/api/Auth/JWT": {
+      "post": {
+        "tags": [
+          "JWT"
+        ],
+        "summary": "Generate JSON Web Token for Authentication.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/PetAdmin/Update": {
+      "put": {
+        "tags": [
+          "PetAdmin"
+        ],
+        "summary": "Update a pet record by PetID.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/PetAdmin/Submit": {
+      "post": {
+        "tags": [
+          "PetAdmin"
+        ],
+        "summary": "Creat a new pet record.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  }
+}
